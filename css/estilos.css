@@ -1,0 +1,12 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}

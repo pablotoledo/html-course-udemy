@@ -14,7 +14,6 @@ body
 .contenedor {
     width: 90%;
     max-width: 1000px;
-    
     margin: auto;
     overflow: hidden;
 }
@@ -178,3 +177,115 @@ header .contenedor-texto .texto .profesion {
     margin-bottom: 30px;
 }
 
+/* --- Footer --- */
+
+footer .contacto{
+    padding: 60px 0;
+}
+
+footer .contacto .titulo {
+    font-size: 34px;
+    margin-top: 34px;
+    font-weight: 300;
+    color: #3895ea;
+    text-align: center;
+}
+
+footer .contenedor .contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contenedor .contacto .formulario input[type="text"],
+footer .contenedor .contacto .formulario input[type="email"],
+footer .contenedor .contacto .formulario textarea {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding:  15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+footer .contenedor .contacto .formulario textarea {
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario input[type="submit"] {
+    margin: auto;
+    background: #3895ea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+footer .contacto .formulario input[type="submit"]:hover {
+    background-color: #387bea;
+}
+
+footer .redes-sociales {
+    background-color: #1e2b38;
+    padding:60px 0;
+}
+
+footer .redes-sociales .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a{
+    color:#fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-size: 30px;
+    margin: 0 15px;
+}
+
+footer .redes-sociales .twitter:hover {background: #1da1f2;}
+footer .redes-sociales .facebook:hover {background: #3b5998;}
+footer .redes-sociales .youtube:hover {background: #ff0000;}
+footer .redes-sociales .github:hover {background: #333;}
+footer .redes-sociales .instagram:hover {background: #405de6;}
+
+/* --- Media Queries --- */
+
+@media screen and (max-width: 800px){
+    header .menu {
+        text-align: center;
+    }
+
+    .main .trabajos .contenedor-trabajos .trabajo{
+        width: 49%;
+    }
+
+    footer .redes-sociales .contenedor{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    header .contenedor-texto .texto .nombre{
+        font-size: 35px;
+    }
+    header .contenedor-texto .texto .profesion{
+        font-size: 18px;
+    }
+}
